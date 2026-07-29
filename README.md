@@ -19,14 +19,13 @@ Or run numbered files in order: `migrations/001` → `004`.
 PostgREST could not find `public.profiles` because the table was never created in
 the remote project. After `APPLY_ALL.sql` succeeds, reload the app and try again.
 
-## Optional: CLI later
+## CLI (linked)
 
-If you have the database password (Project Settings → Database):
+Project `edaara` (`iycmjqhfxzyqaxljiupz`) is linked. After `supabase login`:
 
 ```bash
 cd backend
-npx supabase link --project-ref iycmjqhfxzyqaxljiupz
-npx supabase db push
+supabase db push
 ```
 
 ## Payment / roles
